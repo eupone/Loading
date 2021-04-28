@@ -2,7 +2,7 @@ import sys
 import time
 
 class Bar():
-    def __init__(self,total,time=False,lenght=100,progress=0,start_char="[",start_middle_char='=',middle_char='=',white_char=" ",end_middle_char=">",end_char=']'):
+    def __init__(self,total : int ,time : bool = False,lenght : int = 100,progress : int = 0,start_char : str = "[",start_middle_char : str = '=',middle_char : str = '=',white_char : str = " ",end_middle_char : str = ">",end_char : str = ']'):
 
         self.total = total
         self.lenght = lenght

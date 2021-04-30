@@ -2,7 +2,7 @@
 ## easy loading bar  !
 
 
-C-list est un moyen de faire des listes en C
+loading is a way to do loading bar in python
 - fully customizable
 - easy to use
 

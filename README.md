@@ -1,4 +1,4 @@
-this source-code is under Apache License 2.0 , read LISCENCE for more information
+this source-code is under Apache License 2.0 , read LICENSE for more information
 
 # Loading
 ## easy loading bar  !

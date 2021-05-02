@@ -1,3 +1,5 @@
+this source-code is under Apache License 2.0 , read LISCENCE for more information
+
 # Loading
 ## easy loading bar  !
 

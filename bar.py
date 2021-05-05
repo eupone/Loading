@@ -1,6 +1,11 @@
 import sys
 import time
 
+__version__ = 1.0
+__author__ = 'eupone'
+
+
+
 class Bar():
     def __init__(self,total : int ,time : bool = False,lenght : int = 100,progress : int = 0,start_char : str = "[",start_middle_char : str = '=',middle_char : str = '=',white_char : str = " ",end_middle_char : str = ">",end_char : str = ']'):
 
@@ -56,17 +61,14 @@ class Bar():
     def update(self, message : str = None, time : int = 0):
         if self.killed:
             return False
-        
         if self.progress == self.total:
             return False
-       
-        message = str(message)
         self._delete()
 
         self.progress += 1
 
         if self.time:
-            if len(message) > 0:
+            if message != None and len(message) > 0:
                 sys.stdout.write(f"{message}\n"+self._loading()+self._s_to_hms(time))
                 sys.stdout.flush()
                 return True
@@ -75,7 +77,8 @@ class Bar():
             return True
 
 
-        if len(message) > 0:
+
+        if message != None and len(message) > 0:
             sys.stdout.write(f"{message}\n"+self._loading())
             sys.stdout.flush()
             return True
